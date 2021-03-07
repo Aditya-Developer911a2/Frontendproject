@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  /* font-size: 18px; */
+  /* overflow: visible; */
+}
+
+.navbar-container {
+  width: 80%;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container ul {
+  list-style: none;
+  display: flex;
+}
+.navbar-container ul li {
+  padding: 5px 10px;
+}
+.navbar-container ul li a {
+  color: hsl(233, 8%, 62%);
+  padding-bottom: 20px;
+  transition: 200ms ease;
+}
+
+.navbar-container ul li a:hover {
+  border-bottom: 5px solid hsl(136, 65%, 51%);
+}
+.invite-btn a {
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 14px;
+}
+.invite-btn a:hover {
+  opacity: 0.7;
+}
+
+/* section one  */
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.hero-img {
+  position: relative;
+  background-image: url(/images/bg-intro-desktop.svg);
+  height: 655px;
+  /* flex: 1; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+  width: 50%;
+}
+.hero-img::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(/images/image-mockups.png);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.hero-content p {
+  color: hsl(233, 8%, 62%);
+  padding-bottom: 20px;
+}
+.hero-content h1 {
+  padding-bottom: 20px;
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+  font-size: 50px;
+}
+h1,
+h3 {
+  color: hsl(233, 26%, 24%);
+}
+p {
+  color: hsl(233, 8%, 62%);
+}
+.hero-content a {
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 14px;
+  width: 26%;
+  transition: 100ms ease;
+}
+.hero-content a:hover {
+  opacity: 0.7;
+}
+.why-container {
+  width: 80%;
+  margin: auto;
+}
+.why-titles {
+  margin-left: 20px;
+  margin-top: 80px;
+}
+.why-titles h1 {
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.why-titles p {
+  margin-bottom: 20px;
+  color: hsl(233, 8%, 62%);
+}
+.features {
+  margin-top: 80px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+.features h3 {
+  padding-bottom: 25px;
+}
+.features p {
+  /* padding-left: 20px; */
+}
+.why img {
+  padding-bottom: 25px;
+}
+.features .one,
+.two,
+.three,
+.four {
+  padding-left: 20px;
+}
+
+.news-nos {
+  display: flex;
+}
+.news {
+  padding-top: 100px;
+  width: 80%;
+  margin: auto;
+}
+.news img {
+  width: 250px;
+  border-radius: 5px;
+}
+.news h1 {
+  padding-bottom: 50px;
+  font-weight: 300;
+  font-size: 40px;
+}
+.news p {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.news-small-p {
+  padding-top: 25px !important;
+
+  font-size: 12px !important;
+}
+.news h3 {
+  color: hsl(233, 26%, 24%);
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: 15px;
+}
+.news h3 a {
+  color: hsl(233, 26%, 24%);
+}
+.news h3 a:hover {
+  color: hsl(136, 65%, 51%);
+}
+.news .one img {
+  height: 167px;
+}
+footer {
+  margin-top: 100px;
+  height: 30vh;
+  background-color: hsl(233, 26%, 24%);
+}
+footer .two,
+footer .three {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+}
+.footer-container .two a,
+.footer-container .three a {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-container .two a:hover,
+.footer-container .three a:hover {
+  color: hsl(136, 65%, 51%);
+}
+.footer-container .three a {
+  margin-right: 100px;
+}
+.footer-container {
+  width: 80%;
+  margin: auto;
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .one .logo {
+  padding-bottom: 40px;
+}
+.footer-container .one {
+  margin-top: 15px;
+}
+.footer-container .four .invite-btn {
+  margin-bottom: 40px;
+  padding-left: 120px;
+}
+.footer-container .four span {
+  color: hsl(233, 8%, 62%);
+  text-align: right;
+  font-size: 14px;
+  padding-left: 30px;
+}
+.socials img {
+  padding: 5px;
+}
+.socials img:hover {
+  height: 35px;
+}
